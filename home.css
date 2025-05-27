@@ -1,0 +1,367 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+} 
+
+body{
+   background-color: #8B1E1E;
+   overflow-x: hidden;
+   font-family: 'Poppins', sans-serif;
+   padding-top: 80px;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 5%; 
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-bakso{
+    width: 45px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo .logo-text{
+    font-family: 'Poppins';
+    color: white;
+    user-select: none;
+    width: 100%;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.logo .logo-text span{
+    color: red;
+}
+
+.navbar-end{
+    font-family: helvetica;
+    display: flex;
+    align-items: center;
+    z-index: 20;
+}
+.navbar-end a{
+
+    user-select: none;
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    font-size: 1.1rem;
+}
+
+#menu{
+  color: white;
+  height: 1.5rem;
+  display: none;
+}
+
+.gambar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 0;
+}
+
+.gambar {
+    display: flex;
+    background-color: wheat;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 75%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-top: 40px;
+}
+
+.gambar img { 
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.gambar .isi {
+    width: 50%;
+    padding: 20px;
+    color: rgb(137, 32, 32);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gambar .isi h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.gambar .isi p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.gambar .isi button {
+    background-color: rgb(137, 32, 32);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    font-family: 'ubuntu';
+}
+
+.gambar .isi button:hover {
+    background-color: rgb(100, 20, 20);
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+}
+
+.quantity-control button {
+    background-color: rgb(137, 32, 32);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.quantity-control button:hover {
+    background-color: rgb(100, 20, 20);
+}
+
+.quantity-control .quantity {
+    font-size: 1.2rem;
+    min-width: 30px;
+    text-align: center;
+}
+
+.price {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.order-btn {
+    background-color: rgb(137, 32, 32);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    font-family: 'ubuntu';
+    border: none;
+}
+
+.order-btn:hover {
+    background-color: rgb(100, 20, 20);
+}
+
+.garis{
+  margin-top: 2.5rem;
+  background-color: rgb(107, 14, 14);
+  height: 0.2rem;
+}
+.aboutt {
+    color: white;
+    padding: 12rem 5%;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.aboutt h2 {
+    font-size: 2rem;
+    color: rgb(255, 0, 0);
+    margin-bottom: 1rem;
+    justify-self: center;
+}
+
+.aboutt p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.footer {
+  background-color: #EFE2D0;
+  color: #2f2f2f;
+  padding: 40px 20px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-left img.logo {
+  height: 60px;
+  text-decoration: none;
+}
+
+.footer-center {
+  flex: 1;
+  min-width: 250px;
+  text-decoration: none;
+}
+
+.footer-center h3 {
+  margin-bottom: 10px;
+  color: #2f2f2f;
+}
+
+.footer-center a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-center p {
+  margin: 6px 0;
+  line-height: 1.5;
+  color: black;
+}
+
+.icon {
+  margin-top: 4px; /* agar ikon sejajar vertikal dengan teks */
+  font-size: 18px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-bottom a {
+  color: #444;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bottom .social-icons img {
+  height: 32px;
+  width: 32px;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .gambar {
+    flex-direction: column;
+  }
+
+  .gambar img, .gambar .isi {
+    width: 100%;
+  }
+
+  .gambar img {
+    height: 300px;
+  }
+
+  .gambar .isi {
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .quantity-control {
+    justify-content: center;
+    margin: 1.5rem auto;
+  }
+
+
+  .gambar-container {
+    margin-top: 0.2rem;
+  }
+
+  .navbar {
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar-end {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+    padding: 1rem 0;
+  }
+
+  .navbar-end.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navbar-end a {
+    margin: 0.8rem 0;
+    font-size: 1.3rem;
+  }  
+
+  .footer-bottom .social-icons img {
+  height: 20px;
+  width: 20px;  
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  }
+
+}
