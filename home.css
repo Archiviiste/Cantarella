@@ -44,6 +44,8 @@ body{
     width: 100%;
     font-size: 1.5rem;
     text-decoration: none;
+    font-weight: 700;
+    font-style: italic;
 }
 .logo .logo-text span{
     color: red;
@@ -124,6 +126,8 @@ body{
     font-size: 1rem;
     transition: background-color 0.3s;
     font-family: 'ubuntu';
+    font-weight: 700;
+    font-style: normal;
 }
 
 .gambar .isi button:hover {
